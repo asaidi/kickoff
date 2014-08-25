@@ -1,0 +1,67 @@
+/*
+# Module template
+
+** Description       :: Keep module name as short and as descriptive as possible **
+
+** Markup exemple **
+
+    <div class="module">
+        <div class="module__header">
+            <h2>Module Title</h2>
+        </div>
+        <div class="module__footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa voluptate quo, quaerat. Quia distinctio, delectus aperiam nemo nesciunt provident...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa voluptate quo, quaerat. Quia distinctio, delectus aperiam nemo nesciunt provident...</p>
+        </div>
+    </div>
+
+    <div class="module module--news">
+        <div class="module__header">
+            <h2>Module News Title</h2>
+        </div>
+        <div class="module__footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa voluptate quo, quaerat. Quia distinctio, delectus aperiam nemo nesciunt provident...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsa voluptate quo, quaerat. Quia distinctio, delectus aperiam nemo nesciunt provident...</p>
+        </div>
+    </div>
+
+## Module__element
+1. module__header             : description;
+2. module__title              : description;
+3. Other module element       : etc...
+
+## Module--state
+1. module--is-active          : active state;
+2. module--is-disabled        : disabled state;
+3. Other states               : etc...
+
+## Module--modifier
+1. module--news               : specific style to news module;
+2. module--infos              : specific style to infos module;
+3. Other module modifier      : etc...
+
+*/
+
+.module {
+    position: relative;
+    display: inline-block;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+.module--news {
+    border: 1px solid #d8d8d8;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+.module--is-active {
+    background-color: red
+}
+.module__close {
+    position: absolute;
+    right: 0
+    top: 0
+}
+
+media screen and (min-width: width) {
+    .module { }
+}
